@@ -1,6 +1,7 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import gunImage from "../../assets/gun_greenTop.jpg";
-import { FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 export const Home = () => {
     return (
@@ -78,7 +79,7 @@ export const Home = () => {
                                     className="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-2xl"
                                     aria-label="LeetCode"
                                 >
-                                    <FaCode />
+                                    <SiLeetcode/>
                                 </a>
                             </div>
                         </div>
