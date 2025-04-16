@@ -1,14 +1,20 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
-    const frontendSkills = [
-        "HTML", "CSS", "JavaScript", 
-        "React", "TypeScript", "TailwindCSS"
+    const languages = [
+        "C++", "C", "Python",
+        "SQL", "JavaScript"
     ];
 
-    const backendSkills = [
-        "Next.js", "Node.js", "Python", 
-        "AWS", "Express", "MongoDB", "PostgreSQL"
+    const frontend = [
+        "HTML", "CSS", "JavaScript",
+        "TypeScript", "TailwindCSS", "React",
+        "Next.js"
+    ];
+
+    const backend = [
+        "Node.js", "Express",
+        "AWS", "Vercel", "Render", "Firebase"
     ];
 
     const database = [
@@ -16,7 +22,7 @@ export const About = () => {
     ];
 
     const developerTools = [
-        "Git", "Github", "Linux", 
+        "Git", "Github", "Linux",
         "Visual Studio", "Docker"
     ];
 
@@ -28,17 +34,18 @@ export const About = () => {
                         About Me
                     </h2>
 
-                    {/* 4-in-1 Skills Section */}
+                    {/* 5-in-1 Skills Section */}
                     <div className="mb-16">
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            {/* Frontend Card */}
+                        {/* First row with 3 cards */}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                            {/* Languages Card */}
                             <div className="rounded-xl p-6 bg-gray-800 border border-white/10 hover:border-blue-400/30 transition-all hover:-translate-y-1 hover:shadow-lg group">
                                 <div className="flex items-center gap-3 mb-4">
                                     <div className="w-3 h-3 rounded-full bg-blue-500"></div>
-                                    <h3 className="text-xl font-bold text-white">Frontend</h3>
+                                    <h3 className="text-xl font-bold text-white">Languages</h3>
                                 </div>
                                 <div className="flex flex-wrap gap-2">
-                                    {frontendSkills.map((tech, key) => (
+                                    {languages.map((tech, key) => (
                                         <span
                                             key={key}
                                             className="bg-blue-500/10 text-blue-400 py-1.5 px-4 rounded-full text-sm hover:bg-blue-500/20 hover:scale-105 transition-all cursor-default"
@@ -49,14 +56,14 @@ export const About = () => {
                                 </div>
                             </div>
 
-                            {/* Backend Card */}
+                            {/* Frontend Card */}
                             <div className="rounded-xl p-6 bg-gray-800 border border-white/10 hover:border-purple-400/30 transition-all hover:-translate-y-1 hover:shadow-lg group">
                                 <div className="flex items-center gap-3 mb-4">
                                     <div className="w-3 h-3 rounded-full bg-purple-500"></div>
-                                    <h3 className="text-xl font-bold text-white">Backend</h3>
+                                    <h3 className="text-xl font-bold text-white">Frontend</h3>
                                 </div>
                                 <div className="flex flex-wrap gap-2">
-                                    {backendSkills.map((tech, key) => (
+                                    {frontend.map((tech, key) => (
                                         <span
                                             key={key}
                                             className="bg-purple-500/10 text-purple-400 py-1.5 px-4 rounded-full text-sm hover:bg-purple-500/20 hover:scale-105 transition-all cursor-default"
@@ -78,6 +85,27 @@ export const About = () => {
                                         <span
                                             key={key}
                                             className="bg-emerald-500/10 text-emerald-400 py-1.5 px-4 rounded-full text-sm hover:bg-emerald-500/20 hover:scale-105 transition-all cursor-default"
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Second row with 2 cards (centered) */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                            {/* Backend Card */}
+                            <div className="rounded-xl p-6 bg-gray-800 border border-white/10 hover:border-pink-400/30 transition-all hover:-translate-y-1 hover:shadow-lg group">
+                                <div className="flex items-center gap-3 mb-4">
+                                    <div className="w-3 h-3 rounded-full bg-pink-500"></div>
+                                    <h3 className="text-xl font-bold text-white">Backend</h3>
+                                </div>
+                                <div className="flex flex-wrap gap-2">
+                                    {backend.map((tech, key) => (
+                                        <span
+                                            key={key}
+                                            className="bg-pink-500/10 text-pink-400 py-1.5 px-4 rounded-full text-sm hover:bg-pink-500/20 hover:scale-105 transition-all cursor-default"
                                         >
                                             {tech}
                                         </span>

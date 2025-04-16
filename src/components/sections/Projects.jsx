@@ -5,7 +5,7 @@ export const Projects = () => {
         {
             title: "AceInterview – AI Mock Interview Platform",
             description: "An AI-driven platform for mock interviews, offering personalized feedback and performance analysis. Built with Next.js, Tailwind CSS, and Vapi SDK, integrated with Firebase for storage and authentication.",
-            tags: ["Next.js", "Tailwind CSS", "Vapi SDK", "Firebase(Storage and Authentication)"],
+            tags: ["Next.js", "Tailwind CSS", "Vapi SDK", "Firebase(Storage and Authentication)", "Shadcn/ui"],
             link: "https://ace-interview-one.vercel.app/sign-in"
         },
         {

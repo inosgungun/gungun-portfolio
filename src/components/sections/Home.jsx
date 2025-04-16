@@ -20,7 +20,7 @@ export const Home = () => {
                                     "Passionate about coding, driven by problem-solving."
                                 </p>
                                 <p className="text-lg text-gray-300">
-                                    As a full-stack developer, I specialize in building scalable, user-friendly applications using modern technologies like React.js and Node.js. With a strong passion for coding and problem-solving, I actively practice Data Structures and Algorithms (DSA) to enhance my skills and write efficient solutions.
+                                    As a full-stack developer, I specialize in building scalable, user-friendly applications using modern technologies like React.js and Node.js. With a strong passion for coding and problem-solving, I actively practice Data Structures and Algorithms (DSA) to enhance my skills and I have solved more than 800 problems on Leetcode.
                                 </p>
                             </div>
                             
