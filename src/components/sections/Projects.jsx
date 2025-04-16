@@ -3,6 +3,12 @@ import { RevealOnScroll } from "../RevealOnScroll";
 export const Projects = () => {
     const projects = [
         {
+            title: "AceInterview – AI Mock Interview Platform",
+            description: "An AI-driven platform for mock interviews, offering personalized feedback and performance analysis. Built with Next.js, Tailwind CSS, and Vapi SDK, integrated with Firebase for storage and authentication.",
+            tags: ["Next.js", "Tailwind CSS", "Vapi SDK", "Firebase(Storage and Authentication)"],
+            link: "https://ace-interview-one.vercel.app/sign-in"
+        },
+        {
             title: "DocPoint",
             description: "A MERN stack-based doctor appointment platform, enabling seamless scheduling for patients and profile management for healthcare providers.",
             tags: ["React", "Node.js", "MongoDB", "Express"],
@@ -13,12 +19,6 @@ export const Projects = () => {
             description: "A Streamlit-based chatbot enabling users to query uploaded documents using Hugging Face Transformers. Implemented FAISS for semantic search and LangChain for text processing.",
             tags: ["Streamlit", "Hugging Face", "FAISS", "PyPDF2", "LangChain"],
             link: "https://github.com/inosgungun/Chat_with_PDF"
-        },
-        {
-            title: "Optimized B+ Tree Implementation",
-            description: "High-performance B+ Tree implementation in C++ with efficient file storage operations and optimized search algorithms.",
-            tags: ["C++", "Data Structures", "File Storage"],
-            link: "https://github.com/inosgungun/B-plus-Tree-Implementation"
         }
     ];
 
